@@ -8,6 +8,7 @@ trigger:
 
 jobs:
 - job: 'Hello'
+  timeoutInMinutes: 360
   pool:
     vmImage: 'Ubuntu-16.04'
   steps:
