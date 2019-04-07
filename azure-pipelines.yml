@@ -12,7 +12,7 @@ pool:
 steps:
 - bash: |
     ls
-    ./x.py build
+    ./x.py build --stage 2 src/libstd
   
   displayName: 'Run a one-line script'
 
