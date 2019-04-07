@@ -8,12 +8,13 @@ trigger:
 
 pool:
   vmImage: 'Ubuntu-16.04'
-
-steps:
-- bash: |
-    ls
-    ./x.py build --stage 2 src/libstd
   
+jobs:
+- job: 'Hello'
+  steps:
+  - bash: |
+      ls
+      ./x.py build --stage 2 src/libstd
   displayName: 'Run a one-line script'
 
 - script: |
